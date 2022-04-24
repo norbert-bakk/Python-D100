@@ -9,6 +9,7 @@ ppl_present = int(input("How many people to split the bill?"))
 # tip_percentage_digit2 = tip_percentage[1]
 # tip_percentage_whole = float(1 + tip_percentage_digit1 + tip_percentage_digit2)
 bill_with_tip = tip_percentage / 100 * total_bill + total_bill
-print(f"Each person should pay: {bill_with_tip / ppl_present}")
+final_amount = "{:.2f}".format(bill_with_tip / ppl_present) #to make it 2 decimals
+print(f"Each person should pay: {final_amount}")
 
 #reverse engineering!!!
